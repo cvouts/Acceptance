@@ -1,0 +1,4 @@
+- Pressing control 3 times makes the dialogue sentences appear instantly. Pressing control 3 times afterwards, revokes this. (Use it with caution, as being in "developer mode" when a dialogue ends
+might lead to bugs in phase control)
+
+- There are more specific Dialogue instructions in the relevant scripts folder.

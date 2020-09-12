@@ -1,0 +1,7 @@
+1. The player is colliding with the relevant trigger collider and presses E (OnTriggerStay2D() of ExamineTrigger).
+2. If some prerequisites are met, TriggerDialogue() of DialogueTrigger is called for the current index of the matrix of dialogues (DialogueTrigger[]).
+3. If the next dialogue cannot be triggered, the static dialogue is triggered.
+4. TriggerDialogue() calls CanTriggerDialogue() (from DialogueTrigger as well).
+5. If CanTriggerDialogue() returns true, TriggerDialogue() calls StartDialogue(dialogue) from the relevant dialogueManager.
+6. StartDialogue(dialogue) displays the sentences queued on the relevant dialogue. DisplayNextSentence() is called after each sentence is fully printed.
+7. If DisplayNextSentence() runs out of sentences, it calls EndDialogue(). This, among other things, advances the current phase.
